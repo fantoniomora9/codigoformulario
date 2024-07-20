@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <div id="registromercantil">
+        <img src="./img/registromercantil.jpg" alt="logo" width=""50px" height="50px">
+    </div>
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Inscripción de Comerciante Individual y Empresa</title>
+    
+</head>
+<body>
+    <h1>SOLICITUD DE INSCRIPCIÓN DE COMERCIANTE INDIVIDUAL Y EMPRESA</h1>
+    <form>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="primerNombre">Primer Nombre</label>
+                <input type="text" id="primerNombre" name="primerNombre" placeholder="INGRESE PRIMER NOMBRE">
+            </div>
+            <div class="form-group">
+                <label for="segundoNombre">Segundo Nombre</label>
+                <input type="text" id="segundoNombre" name="segundoNombre" placeholder="INGRESE SEGUNDO NOMBRE">
+            </div>
+            <div class="form-group">
+                <label for="otroNombre">Otro Nombre</label>
+                <input type="text" id="otroNombre" name="otroNombre">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="primerApellido">Primer Apellido</label>
+                <input type="text" id="primerApellido" name="primerApellido" placeholder="INGRESE PRIMER APELLIDO">
+            </div>
+            <div class="form-group">
+                <label for="segundoApellido">Segundo Apellido</label>
+                <input type="text" id="segundoApellido" name="segundoApellido" placeholder="INGRESE SEGUNDO APELLIDO">
+            </div>
+            <div class="form-group">
+                <label for="apellidoCasada">Apellido Casada</label>
+                <input type="text" id="apellidoCasada" name="apellidoCasada">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="edad">de</label>
+                <input type="text" id="edad" name="edad" placeholder="0">
+            </div>
+            <div class="form-group">
+                <label for="anos">Años</label>
+                <select id="anos" name="anos">
+                    <option value="">- SELECCIONE UNA OPCION -</option>
+                </select>
+            </div>
+            <div class="form-group"> 
+                <label for="nacionalidad">Nacionalidad</label>
+                <input type="text" id="nacionalidad" name="nacionalidad" placeholder="INGRESE NACIONALIDAD">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="profesion">Profesión u Oficio</label>
+                <input type="text" id="profesion" name="profesion" placeholder="INGRESE PROFESION">
+            </div>
+            <div class="form-group">
+                <label for="departamento">con domicilio en el Departamento de</label>
+                <input type="text" id="departamento" name="departamento"placeholder="INGRESE DEPARTAMENTO">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="residencia">Con Residencia en:</label>
+            <input type="text" id="residencia" name="residencia" class="full-width">
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label>DOCUMENTO DE IDENTIFICACIÓN</label>
+                <div>
+                    <input type="checkbox" id="pasaporte" name="documento" value="pasaporte">
+                    <label for="pasaporte">PASAPORTE</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="dpi" name="documento" value="dpi">
+                    <label for="dpi">DOCUMENTO PERSONAL DE IDENTIFICACION (DPI)</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="nit">Nit:</label>
+                <input type="text" id="nit" name="nit">
+            </div>
+            <div class="form-group">
+                <label for="telefono">No. De Teléfono y/o Celular:</label>
+                <input type="text" id="telefono" name="telefono">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="EJEMPLO@GMAIL.COM">
+            </div>
+        </div>
+        <div class="checkbox-group">
+            <p>Atentamente PIDO:</p>
+            <div>
+                <input type="checkbox" id="individual" name="tipo" value="individual">
+                <label for="individual">Que se me inscriba como comerciante individual</label>
+            </div>
+            <div>
+                <input type="checkbox" id="empresa" name="tipo" value="empresa">
+                <label for="empresa">Que se inscriba la siguiente empresa de mi propiedad o Propiedad de:</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="nombreComercial">Nombre Comercial:</label>
+            <input type="text" id="nombreComercial" name="nombreComercial" class="full-width">
+        </div>
+        <div class="form-group">
+            <label for="direccion">Dirección Completa:</label>
+            <input type="text" id="direccion" name="direccion" class="full-width">
+        </div>
+        <div class="form-group">
+            <label for="objeto">Objeto:</label>
+            <input type="text" id="objeto" name="objeto" class="full-width">
+        </div>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+            }
+            h1 {
+                text-align: center;
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            form {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            .form-row {
+                display: flex;
+                margin-bottom: 10px;
+                align-items: center;
+            }
+            .form-group {
+                flex: 1;
+                margin-right: 10px;
+            }
+            .form-group:last-child {
+                margin-right: 0;
+            }
+            label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+            input[type="text"],
+            input[type="email"],
+            input[type="date"],
+            input[type="number"],
+            select {
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            input[type="checkbox"] {
+                margin-right: 5px;
+            }
+            .full-width {
+                width: 100%;
+            }
+            .checkbox-group {
+                margin-top: 20px;
+            }
+            .signature-line {
+                border-top: 1px solid black;
+                width: 300px;
+                margin-top: 50px;
+            }
+            .footer {
+                margin-top: 20px;
+                text-align: center;
+            }
+            .export-btn {
+                background-color: #5bc0de;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>SOLICITUD DE INSCRIPCIÓN DE COMERCIANTE INDIVIDUAL Y EMPRESA</h1>
+        <form>
+            <!-- Campos originales del formulario -->
+            <!-- ... (mantener todos los campos anteriores) ... -->
+    
+            <!-- Nuevos campos -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fechaInicio">Fecha de inicio de actividades:</label>
+                    <input type="date" id="fechaInicio" name="fechaInicio">
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="alInscribirse" name="alInscribirse">
+                    <label for="alInscribirse">al inscribirse</label>
+                </div>
+                <div class="form-group">
+                    <label for="capital">Capital: Q.</label>
+                    <input type="text" id="capital" name="capital">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="checkbox" id="categoriaUnica" name="categoriaUnica">
+                    <label for="categoriaUnica">Categoría: Única</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="sucursal" name="sucursal">
+                    <label for="sucursal">Sucursal</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="administrador">Administrador, Gerente o Factor:</label>
+                <input type="text" id="administrador" name="administrador" class="full-width">
+            </div>
+            
+            <div class="form-group">
+                <label for="regimenMatrimonial">1) Si es casado, indique régimen matrimonial</label>
+                <input type="text" id="regimenMatrimonial" name="regimenMatrimonial" class="full-width">
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="propietarioInscrito">2) Si el Propietario está inscrito como comerciante o Sociedad, indique No.</label>
+                    <input type="text" id="propietarioInscrito" name="propietarioInscrito">
+                </div>
+                <div class="form-group">
+                    <label for="folio">Folio</label>
+                    <input type="text" id="folio" name="folio" placeholder="0">
+                </div>
+                <div class="form-group">
+                    <label for="libro">Libro</label>
+                    <input type="text" id="libro" name="libro" placeholder="0">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="numeroEmpleados">3) Número de Empleados a contratar:</label>
+                <input type="number" id="numeroEmpleados" name="numeroEmpleados" value="0" class="full-width">
+            </div>
+            
+            <div class="form-group">
+                <label for="fecha">Fecha:</label>
+                <input type="text" id="fecha" name="fecha" value="20/07/2024 18:17:52" readonly>
+            </div>
+            
+            <div class="signature-line"></div>
+            <div class="form-group">
+                <label for="firma">F:</label>
+            </div>
+            
+            <div class="footer">
+                <p>Este Documento debe Imprimirse en tamaño Oficio</p>
+                <p>Ingrese su correo para enviarle una copia de su solicitud a su correo</p>
+                <button type="button" class="export-btn">Exportar a PDF</button>
+                <p>© 2024 - Registro Mercantil General de la República</p>
+            </div>
+        </form>
+    </body>
+    </html>
+    </form>
+</body>
+</html>
+</body>
+</html>
